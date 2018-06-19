@@ -107,6 +107,24 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 0 && bottomNavigationView.isShown()) {
+                    bottomNavigationView.setVisibility(View.GONE);
+                } else if (dy < 0) {
+                    bottomNavigationView.setVisibility(View.VISIBLE);
+
+                }
+            }
+
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+        });
+
         if (!isNetworkAvailable()) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
