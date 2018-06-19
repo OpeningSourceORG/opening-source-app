@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Opening Source</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="nav_header_title">Opening Source</string>
+    <string name="nav_header_subtitle" translatable="false">https://openingsource.org/</string>
+    <string name="action_settings">settings</string>
+    <string name="navigation_drawer_close" translatable="false">close</string>
+    <string name="navigation_drawer_open" translatable="false">open</string>
+    <string name="about">About</string>
+    <string name="developers">Developers</string>
+    <string name="join_menu">Join Us</string>
+    <string name="contact">Share</string>
+    <string name="contact_telegram">Telegram</string>
+    <string name="contact_qq">QQ</string>
+    <string name="social_menu">Follow Us</string>
+    <string name="social_weibo">Weibo</string>
+    <string name="social_facebook" translatable="false">Facebook</string>
+    <string name="social_twitter" translatable="false">Twitter</string>
+    <string name="social_google" translatable="false">Google+</string>
+    <string name="home_page">Home</string>
+    <string name="alert_message">Please check your Internet status and refresh later!</string>
+    <string name="alert_title">Internet Unvailable</string>
+    <string name="alert_positive">Ackowledge</string>
+    <string name="tab_bottom_daily">Daily</string>
+    <string name="tab_bottom_all">Previous</string>
+    <string name="btn_more">READ MORE</string>
+    <string name="btn_share">SHARE</string>
+</resources>

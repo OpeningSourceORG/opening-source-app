@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_page"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home_page" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_more_horiz_black_24dp"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_developers"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/developers" />
+
+    </group>
+
+    <item android:title="@string/join_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/contact_telegram" />
+            <item
+                android:id="@+id/nav_qq"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/contact_qq" />
+        </menu>
+    </item>
+
+    <item android:title="@string/social_menu">
+        <menu>
+            <item
+                android:id="@+id/nav_socila_weibo"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/social_weibo" />
+            <item
+                android:id="@+id/nav_socila_twitter"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/social_twitter" />
+            <item
+                android:id="@+id/nav_socila_facebook"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/social_facebook" />
+            <item
+                android:id="@+id/nav_socila_google"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/social_google" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">開源工廠</string>
+    <string name="nav_header_title">開源工廠</string>
+    <string name="action_settings">設置</string>
+    <string name="about">關於</string>
+    <string name="developers">開發者</string>
+    <string name="join_menu">加入我們</string>
+    <string name="contact">分享</string>
+    <string name="contact_telegram">電報羣組</string>
+    <string name="contact_qq">QQ羣</string>
+    <string name="social_menu">關注我們</string>
+    <string name="social_weibo">微博</string>
+    <string name="home_page">主頁</string>
+    <string name="alert_message">請檢查網絡狀態再刷新</string>
+    <string name="alert_title">網絡不可用</string>
+    <string name="alert_positive">知道</string>
+    <string name="tab_bottom_daily">日報</string>
+    <string name="tab_bottom_all">往期</string>
+    <string name="btn_share">分享</string>
+    <string name="btn_more">閱讀更多</string>
+</resources>
