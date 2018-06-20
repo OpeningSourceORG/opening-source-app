@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <item android:title="@string/app_name">
+        <menu>
         <item
             android:id="@+id/nav_home_page"
             android:icon="@drawable/ic_home_black_24dp"
@@ -16,8 +17,9 @@
             android:id="@+id/nav_developers"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/developers" />
+        </menu>>
 
-    </group>
+    </item>
 
     <item android:title="@string/join_menu">
         <menu>

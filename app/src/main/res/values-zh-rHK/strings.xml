@@ -22,10 +22,21 @@
     <string name="author_nation">中國</string>
     <string name="string_version">版本</string>
     <string name="string_changelog">更改日誌</string>
-    <string name="string_license">授權</string>
-    <string name="string_author">作者</string>
     <string name="string_fork_on_github">在Github上Fork</string>
     <string name="string_visit_website">訪問網站</string>
     <string name="string_send_an_email">電郵諮詢</string>
     <string name="string_email_subject">問詢開源工廠應用相關事宜</string>
+    <string name="string_license">許可證</string>
+    <string name="dialog_release">發佈</string>
+    <string name="string_developer">開發者</string>
+    <string name="alert_error">無法加載數據</string>
+    <string name="about_text">
+        做你所想，開源工場
+        \n\n開源工場（Opening Source Org）是一個通過開源協作形式來創造生產力和寓技術於樂趣的頻分多址非盈利開源社區。主張享受開源審美和動手做開源。目前有全球流行開源項目榜中榜開源周報、開源日報、媛寶、猿帥、開源尚青、開源工寮等原創欄目以及主辦學生開源年會 (https://soscon.top/)（SOScon）。社區運作以技術委員會和各技術主持人為驅動。
+        \n\nSOScon（Students Open Source Conference）學生開源年會 (https://soscon.top/)，是 SITCON (https://sitcon.org/) 的姊妹會議，與臺灣 SITCON、香港 SITCON HK 合為兩岸華人社區三大面向學生的技術會議。旨在鼓勵更多的學生了解和參與開源；也是中國大陸首屆面向學生的開源會議，從演講者到工作人員到聽眾幾乎全部為學生，享受開源樂趣，參與開源貢獻。關於暢想未來這件事情，我們學生更有感覺
+        \n\n\n\n開源工場主要關註在使用開放協作的形式和開放源碼的技術來創造生產力，打造具有切實意義的社會、教育、前沿技術、商業等項目。
+        \n\n開源農場是開源工場的姊妹項目，和開源工場關註生產力和創新不同，開源農場旨在關註 have fun 和 have joy，單純享受開源和黑客文化的樂趣。
+        \n\n\n\n蒹葭蒼蒼，白露為霜；開源工場，在水一方。
+    </string>
+    <string name="share_with">分享</string>
 </resources>

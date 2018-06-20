@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,7 +15,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity
     private ProgressBar progressBar;
     private String urlString;
     private BottomNavigationView bottomNavigationView;
+    private static final String qq_key = "0rRzWHPh7xCjk2rWdYUSm6G41rz8DQ6M";
 
     @Override
     protected void onCreate(@Nullable  Bundle savedInstanceState) {
@@ -54,7 +55,16 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         progressBar = findViewById(R.id.progressBar);
-        urlString = "https://openingsource.org/daily/feed/";
+
+        if(getResources().getConfiguration().locale.getCountry().equals("TW")|getResources().getConfiguration().locale.getCountry().equals("HK"))
+        {
+            urlString = "https://openingsource.org/daily/feed/zh-tw";
+        }
+        else
+        {
+            urlString = "https://openingsource.org/daily/feed/";
+        }
+
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bnv_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -62,11 +72,25 @@ public class MainActivity extends AppCompatActivity
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.tab_daily:
-                        urlString = "https://openingsource.org/daily/feed/";
+                        if(getResources().getConfiguration().locale.getCountry().equals("TW")|getResources().getConfiguration().locale.getCountry().equals("HK")) {
+                            urlString = "https://openingsource.org/daily/feed/zh-tw";
+                        }
+                        else
+                        {
+                            urlString = "https://openingsource.org/daily/feed/";
+                        }
+
                         loadFeed();
                         return true;
                     case R.id.tab_all:
-                        urlString = "https://openingsource.org/feed/";
+                        if(getResources().getConfiguration().locale.getCountry().equals("TW")|getResources().getConfiguration().locale.getCountry().equals("HK")) {
+                            urlString = "https://openingsource.org/feed/zh-tw";
+                        }
+                        else
+                        {
+                            urlString = "https://openingsource.org/feed/";
+                        }
+
                         loadFeed();
                         return true;
                 }
@@ -161,8 +185,6 @@ public class MainActivity extends AppCompatActivity
             //what to do when the parsing is done
             @Override
             public void onTaskCompleted(ArrayList<Article> list) {
-                //list is an Array List with all article's information
-                //set the adapter to recycler view
                 adapter = new ArticleAdapter(list, R.layout.card_view, MainActivity.this);
                 mRecyclerView.setAdapter(adapter);
                 progressBar.setVisibility(View.GONE);
@@ -179,9 +201,8 @@ public class MainActivity extends AppCompatActivity
                     public void run() {
                         progressBar.setVisibility(View.GONE);
                         mSwipeRefreshLayout.setRefreshing(false);
-                        Toast.makeText(MainActivity.this, "Unable to load data.",
+                        Toast.makeText(MainActivity.this, R.string.alert_error,
                                 Toast.LENGTH_LONG).show();
-                        Log.i("Unable to load ", "articles");
                     }
                 });
             }
@@ -249,22 +270,81 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home_page) {
+        if (id == R.id.nav_home_page)
+        {
             Intent i = new Intent(MainActivity.this, MainActivity.class);
             startActivity(i);
-        } else if (id == R.id.nav_about) {
+        }
+        else if (id == R.id.nav_about)
+        {
+            Intent i = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_developers) {
+        }
+        else if (id == R.id.nav_developers)
+        {
             Intent i = new Intent(MainActivity.this, DeveloperActivity.class);
             startActivity(i);
 
-        }  else if (id == R.id.nav_telegram) {
+        }
+        else if (id == R.id.nav_telegram)
+        {
+            String url = "http://t.me/OpeningSourceOrg";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_qq)
+        {
+            joinQQGroup(qq_key);
 
+        }
+        else if (id == R.id.nav_socila_weibo)
+        {
+
+            String url = "https://weibo.com/openingsource";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_socila_twitter)
+        {
+            String url = "https://twitter.com/openingsource";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_socila_facebook)
+        {
+
+            String url = "https://facebook.com/openingsource";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_socila_google)
+        {
+            String url = "https://google.com/+OpeningSource";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public boolean joinQQGroup(String key) {
+        Intent intent = new Intent();
+        intent.setData(Uri.parse("mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3D" + key));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        try {
+            startActivity(intent);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override

@@ -18,15 +18,20 @@
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ui.PostsDetailActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.MainActivity"/>
         <activity android:name=".ui.DeveloperActivity"
             android:theme="@style/AppTheme.MaterialAboutActivity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.MainActivity"/>
+        <activity android:name=".ui.AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.MainActivity"/>
 
     </application>
 
