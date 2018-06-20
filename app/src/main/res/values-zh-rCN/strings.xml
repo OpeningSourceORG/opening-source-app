@@ -19,4 +19,13 @@
     <string name="tab_bottom_all">往期</string>
     <string name="btn_more">阅读更多</string>
     <string name="btn_share">分享</string>
+    <string name="author_nation">中国</string>
+    <string name="string_version">版本</string>
+    <string name="string_changelog">更改日志</string>
+    <string name="string_author">作者</string>
+    <string name="string_fork_on_github">在Github上Fork</string>
+    <string name="string_visit_website">访问网站</string>
+    <string name="string_send_an_email">邮件咨询</string>
+    <string name="string_email_subject">咨询开源工厂应用相关事宜</string>
+    <string name="string_license">授权</string>
 </resources>

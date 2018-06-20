@@ -25,4 +25,18 @@
     <string name="tab_bottom_all">Previous</string>
     <string name="btn_more">READ MORE</string>
     <string name="btn_share">SHARE</string>
+    <string name="author_nation">China</string>
+    <string name="author_github" translatable="false">https://github.com/Hackerchai</string>
+    <string name="string_version">Version</string>
+    <string name="string_changelog">Changelog</string>
+    <string name="string_license">License</string>
+    <string name="string_author">Author</string>
+    <string name="string_fork_on_github">Fork  on github</string>
+    <string name="string_visit_website">Visit website</string>
+    <string name="author_website" translatable="false">https://hackerchai.com</string>
+    <string name="string_send_an_email">Send an email</string>
+    <string name="author_email" translatable="false">hackerchai.com@gmail.com</string>
+    <string name="string_email_subject">Question concerning Opening Source APP</string>
+    <string name="author_name" translatable="false">Hackerchai</string>
+    <string name="orgnization_website" translatable="false">https://openingsource.org</string>
 </resources>

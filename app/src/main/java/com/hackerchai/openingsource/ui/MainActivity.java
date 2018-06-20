@@ -2,6 +2,7 @@ package com.hackerchai.openingsource.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -249,10 +250,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home_page) {
-            // Handle the camera action
+            Intent i = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_about) {
 
         } else if (id == R.id.nav_developers) {
+            Intent i = new Intent(MainActivity.this, DeveloperActivity.class);
+            startActivity(i);
 
         }  else if (id == R.id.nav_telegram) {
 
