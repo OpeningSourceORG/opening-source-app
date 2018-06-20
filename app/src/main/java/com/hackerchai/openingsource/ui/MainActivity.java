@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity
                     case R.id.tab_daily:
                         urlString = "https://openingsource.org/daily/feed/";
                         loadFeed();
-                        break;
+                        return true;
                     case R.id.tab_all:
                         urlString = "https://openingsource.org/feed/";
                         loadFeed();
-                        break;
+                        return true;
                 }
                 return false;
             }
