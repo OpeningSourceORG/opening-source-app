@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource.ui;
+package org.openingsource.hackerchai.ui;
 
 
 
@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 
-import com.hackerchai.openingsource.R;
+import com.hackerchai.hackerchai.R;
 
 
 

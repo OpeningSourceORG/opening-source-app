@@ -1,24 +1,22 @@
-package com.hackerchai.openingsource.ui;
+package org.openingsource.hackerchai.ui;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.net.Uri;
-
 
 import com.danielstone.materialaboutlibrary.ConvenienceBuilder;
 import com.danielstone.materialaboutlibrary.MaterialAboutActivity;
+import com.danielstone.materialaboutlibrary.items.MaterialAboutActionItem;
+import com.danielstone.materialaboutlibrary.items.MaterialAboutItemOnClickAction;
 import com.danielstone.materialaboutlibrary.items.MaterialAboutTitleItem;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutCard;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutList;
-import com.danielstone.materialaboutlibrary.items.MaterialAboutActionItem;
-import com.danielstone.materialaboutlibrary.items.MaterialAboutItemOnClickAction;
-
-import com.hackerchai.openingsource.R;
-
 import com.mikepenz.community_material_typeface_library.CommunityMaterial;
 import com.mikepenz.iconics.IconicsDrawable;
+
+import com.hackerchai.hackerchai.R;
 
 import de.psdev.licensesdialog.LicensesDialog;
 import de.psdev.licensesdialog.licenses.License;
@@ -63,7 +61,7 @@ public class DeveloperActivity extends MaterialAboutActivity {
                     public void onClick() {
                         final String name = c.getResources().getString(R.string.license_dialog);
                         final String url = c.getResources().getString(R.string.app_repo);
-                        final String copyright ="Copyright 2018 Hackerchai <hackerchai.com@gmail.com>";
+                        final String copyright ="Copyright 2018 Hackerchai <org.openingsource.hackerchai.com@gmail.com>";
                         final License license = new MITLicense();
                         final Notice notice = new Notice(name, url, copyright, license);
                         new LicensesDialog.Builder(DeveloperActivity.this)

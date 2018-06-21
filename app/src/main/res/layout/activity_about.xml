@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.hackerchai.openingsource.ui.AboutActivity">
+    tools:context="com.hackerchai.hackerchai.com.hackerchai.openingsource.ui.AboutActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_scrolling"
@@ -20,6 +20,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="16dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView

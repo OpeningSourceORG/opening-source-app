@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource.ui;
+package org.openingsource.hackerchai.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -27,9 +27,8 @@ import android.view.MenuItem;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.hackerchai.openingsource.R;
-import com.hackerchai.openingsource.adapter.ArticleAdapter;
-import com.hackerchai.openingsource.model.Posts;
+import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.adapter.ArticleAdapter;
 import com.prof.rssparser.Article;
 import com.prof.rssparser.Parser;
 
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView mRecyclerView;
-    private ArrayList<Posts> postsList;
     private ArticleAdapter adapter;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private ProgressBar progressBar;
@@ -249,20 +247,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

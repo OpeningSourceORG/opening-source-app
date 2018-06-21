@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">开源工厂</string>
-    <string name="nav_header_title">开源工厂</string>
+    <string name="app_name">开源工场</string>
+    <string name="nav_header_title">开源工场</string>
     <string name="action_settings">设置</string>
     <string name="about">关于</string>
     <string name="developers">开发者</string>
@@ -25,7 +25,7 @@
     <string name="string_fork_on_github">在Github上Fork</string>
     <string name="string_visit_website">访问网站</string>
     <string name="string_send_an_email">邮件咨询</string>
-    <string name="string_email_subject">咨询开源工厂应用相关事宜</string>
+    <string name="string_email_subject">咨询开源工场应用相关事宜</string>
     <string name="string_license">许可证</string>
     <string name="dialog_release">发布</string>
     <string name="string_developer">开发者</string>
@@ -34,9 +34,9 @@
         做你所想，开源工场
         \n\n开源工场（Opening Source Org）是一个通过开源协作形式来创造生产力和寓技术于乐趣的频分多址非盈利开源社区。主张享受开源审美和动手做开源。目前有全球流行开源项目榜中榜开源周报、开源日报、媛宝、猿帅、开源尚青、开源工寮等原创栏目以及主办学生开源年会 (https://soscon.top/)（SOScon）。社区运作以技术委员会和各技术主持人为驱动。
         \n\nSOScon（Students Open Source Conference）学生开源年会 (https://soscon.top/)，是 SITCON (https://sitcon.org/) 的姊妹会议，与台湾 SITCON、香港 SITCON HK 合为两岸华人社区三大面向学生的技术会议。旨在鼓励更多的学生了解和参与开源；也是中国大陆首届面向学生的开源会议，从演讲者到工作人员到听众几乎全部为学生，享受开源乐趣，参与开源贡献。关于畅想未来这件事情，我们学生更有感觉
-        \n\n\n\n开源工场主要关注在使用开放协作的形式和开放源码的技术来创造生产力，打造具有切实意义的社会、教育、前沿技术、商业等项目。
+        \n\n开源工场主要关注在使用开放协作的形式和开放源码的技术来创造生产力，打造具有切实意义的社会、教育、前沿技术、商业等项目。
         \n\n开源农场是开源工场的姊妹项目，和开源工场关注生产力和创新不同，开源农场旨在关注 have fun 和 have joy，单纯享受开源和黑客文化的乐趣。
-        \n\n\n\n蒹葭苍苍，白露为霜；开源工场，在水一方。
+        \n\n\蒹葭苍苍，白露为霜；开源工场，在水一方。
     </string>>
     <string name="share_with">分享</string>
 </resources>

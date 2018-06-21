@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource.ui;
+package org.openingsource.hackerchai.ui;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.hackerchai.openingsource.R;
+import com.hackerchai.hackerchai.R;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -46,7 +46,7 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         ImageView image_scrolling_top = findViewById(R.id.image_scrolling_top);
-        Glide.with(this).load(R.drawable.scroll_backround).apply(new RequestOptions().fitCenter()).into(image_scrolling_top);
+        Glide.with(this).load(R.drawable.scroll_background).apply(new RequestOptions().fitCenter()).into(image_scrolling_top);
     }
 
     @Override

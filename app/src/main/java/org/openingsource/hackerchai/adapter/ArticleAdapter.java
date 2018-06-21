@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource.adapter;
+package org.openingsource.hackerchai.adapter;
 
 
 
@@ -13,10 +13,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.hackerchai.openingsource.R;
-import com.hackerchai.openingsource.ui.PostsDetailActivity;
+import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.ui.PostsDetailActivity;
 import com.prof.rssparser.Article;
 import com.squareup.picasso.Picasso;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

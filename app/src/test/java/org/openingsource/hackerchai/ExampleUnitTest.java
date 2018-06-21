@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource;
+package com.hackerchai.hackerchai;
 
 import org.junit.Test;
 

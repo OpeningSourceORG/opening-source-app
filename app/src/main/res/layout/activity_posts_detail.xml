@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ui.PostsDetailActivity">
+    tools:context="com.hackerchai.openingsource.ui.PostsDetailActivity">
 
 </android.support.design.widget.CoordinatorLayout>

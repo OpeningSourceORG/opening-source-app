@@ -1,4 +1,4 @@
-package com.hackerchai.openingsource.model;
+package org.openingsource.hackerchai.model;
 
 import java.io.Serializable;
 
