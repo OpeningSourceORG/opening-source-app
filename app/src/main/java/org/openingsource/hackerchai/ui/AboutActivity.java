@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.R;
 
 public class AboutActivity extends AppCompatActivity {
 

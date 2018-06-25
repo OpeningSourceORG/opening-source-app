@@ -27,7 +27,7 @@ import android.view.MenuItem;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.R;
 import org.openingsource.hackerchai.adapter.ArticleAdapter;
 import com.prof.rssparser.Article;
 import com.prof.rssparser.Parser;

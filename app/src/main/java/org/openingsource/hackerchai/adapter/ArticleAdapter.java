@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.R;
 import org.openingsource.hackerchai.ui.PostsDetailActivity;
 import com.prof.rssparser.Article;
 import com.squareup.picasso.Picasso;
@@ -58,10 +58,12 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
         final Article currentArticle = articles.get(position);
 
+        /*
         Locale.setDefault(Locale.getDefault());
         Date date = currentArticle.getPubDate();
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM yyyy");
         final String pubDateString = sdf.format(date);
+        */
 
         viewHolder.title.setText(currentArticle.getTitle());
 
@@ -70,11 +72,12 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
                 .placeholder(R.drawable.placeholder)
                 .into(viewHolder.image);
 
-        viewHolder.pubDate.setText(pubDateString);
+        //viewHolder.pubDate.setText(pubDateString);
 
         String description = "";
         if (currentArticle.getDescription() != null) {
            description = currentArticle.getDescription();
+           description = description.substring(3,description.length());
         }
 
         viewHolder.desc.setText(description);
@@ -128,7 +131,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView title;
-        TextView pubDate;
+        //TextView pubDate;
         ImageView image;
         TextView desc;
         Button share;
@@ -138,7 +141,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
 
             super(itemView);
             title = itemView.findViewById(R.id.post_title);
-            pubDate = itemView.findViewById(R.id.post_date);
+            //pubDate = itemView.findViewById(R.id.post_date);
             image = itemView.findViewById(R.id.post_photo);
             desc = itemView.findViewById(R.id.post_desc);
             share = itemView.findViewById(R.id.btn_share);

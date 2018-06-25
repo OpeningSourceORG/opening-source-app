@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 
-import com.hackerchai.hackerchai.R;
+import org.openingsource.hackerchai.R;
 
 
 

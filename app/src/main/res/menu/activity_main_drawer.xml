@@ -25,11 +25,11 @@
         <menu>
             <item
                 android:id="@+id/nav_telegram"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_telegram"
                 android:title="@string/contact_telegram" />
             <item
                 android:id="@+id/nav_qq"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_qqchat"
                 android:title="@string/contact_qq" />
         </menu>
     </item>
@@ -38,19 +38,19 @@
         <menu>
             <item
                 android:id="@+id/nav_socila_weibo"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_weibo"
                 android:title="@string/social_weibo" />
             <item
                 android:id="@+id/nav_socila_twitter"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_twitter"
                 android:title="@string/social_twitter" />
             <item
                 android:id="@+id/nav_socila_facebook"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_facebook"
                 android:title="@string/social_facebook" />
             <item
                 android:id="@+id/nav_socila_google"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_google_plus"
                 android:title="@string/social_google" />
         </menu>
     </item>
