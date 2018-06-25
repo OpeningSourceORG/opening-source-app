@@ -19,14 +19,9 @@ import com.prof.rssparser.Article;
 import com.squareup.picasso.Picasso;
 
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
 
-/**
- * Created by Marco Gomiero on 12/02/2015.
- */
+
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHolder> {
 
